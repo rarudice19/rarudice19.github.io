@@ -1,1 +1,247 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rudi's Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- What is Bootstrap? Bootstrap is a HTML, CSS, and JS framework for developing responsive, mobile first projects. -->
+    <!-- How do I use Bootstrap? Head to https://getbootstrap.com/ and click the 'Get Started' button. -->
+    <!-- In the getting started guide, you should see CSS and JS, each with respective links under them. To access the Bootstrap framework, we need to use these links into our HTML file. Follow the directions on Bootstrap's website and copy/paste the necessary 'link' and 'script' tags. -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Blinker|Changa|Farro&display=swap" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <!-- Bootstrap has prebuilt components that we can use within our webpage's. Below, we're using Bootstrap's navbar component. On the Bootstrap website, in the left sidebar, you should see a link to 'Components'. After clicking Components, the left sidebar should populate a list of all of the pre-built components Bootstrap has to offer. We can use these components and edit them however we would like. -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar right">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href ="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <!-- requires Firebase app-->
+            <a class="dropdown-item" href="#API">API Project</a>
+            <a class="dropdown-item" href="#CSS">CSS Creature</a>
+            <a class="dropdown-item" href="#greeks">Wabash Greeks</a>
+            <a class="dropdown-item" href="#staticLayout">Static Layout</a>
+            <a class="dropdown-item" href="#Blue">Blue Badge Project TBA</a>
+            <a class="dropdown-item" href="#Red">Red Badge Project TBA</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+
+  <!-- Here we are using Bootstrap's 'Jumbotron' component to create a header or landing page for our site. -->
+  <section id="home">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Rudi Rudicel</h1>
+      <p class="lead">Computer Programmer</p>
+      <a href="https://github.com/rarudice19">
+        <img  id="icon1" src="../portfolioExample/assets/img/github-512.png">
+      </a>
+      <a href="https://www.linkedin.com/in/alexrudicel/">
+        <img  id="icon2" src="../portfolioExample/assets/img/linkedin.png">
+      </a>
+      <a href="https://docs.google.com/document/d/1EWtvGpj0Yy7FQDleIyRztbQSacSFep3a/edit">
+        <button id="resBtn">My Resume</button>
+      </a>
+      <a href="https://docs.google.com/document/d/1OxW_iCKjFM0zQ8S_0drkGJYdDU6-O4PyrrmuSv-wpsI/edit">
+      <button id="proBtn">My Networking Profile</button>
+      </a>
+    </div>
+    <div id="control"></div>
+    <div id="control2"></div>
+  </div>
+</section>
+
+  <!-- Projects -->
+
+  <!-- Although we are not using a Bootstrap component for our projects section, we are using Bootstrap's grid system to help with the layout of our webpage. In the 'Grid' section located in the left sidebar, there is documentation explaining how to implement Bootstrap's grid system within our webpage. -->
+  <!-- Bootstap's grid system has 12 columns that span the horizontal width of our viewport. By using the container, row, and col classes, we can use the grid system to evenely space out how many columns we want. In our code below, we have three div's that are each taking up 4 columns of the alloted 12 - which means they should be evenly spaced, taking up 4 columns each. -->
+  <!-- Below we have a container, with a nested row, and 3 nested columns. The container is simply just a container for our content that we want to display in our grid. The row will align our columns in a horizontal row. And the columns are were we store our information.  -->
+
+  <section id="projects">
+    <h1 style="text-align: center">Projects</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+            <a id="API" href="https://pokedexsearch.firebaseapp.com/" target="blank">
+              <img class="image" src="C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/poke.png">
+            </a>
+          <h3>API Project</h3>
+          <p>This is a project deployed using Firebase. It pulls from the PokeAPI and lets you search for a pokemon by Pokedex number.</p>
+        </div>
+        <div class="col-4">
+            <a id= "CSS" href="https://codepen.io/rarudice19/full/QeOXeq" target="blank">
+              <img  class="image" src="C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/css.png">
+            </a>
+          <h3>CSS Creature</h3>
+          <p>This is a creature made using CSS styling through HTML.</p>
+        </div>
+        <div class="col-4">
+          <a id="greeks" href="https://wabashgreeks.wordpress.com" target="blank">
+            <img  class="image" src="C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/greeks.png">
+          </a>
+          <h3>Wabash Greeks</h3>
+          <p>This was a website developed as a team of college students. I was the lone sophmore and thus responsible for a majority of the site. This was a site created using WordPress as a possible replacement to the individual fraternity pages on the Wabash College website.</p>
+        </div>
+        <div class="col-4">
+          <a id="static" href="C:/Users/Darquan/Desktop/Projects/staticLayout/index.html">
+            <img class="image" src="C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/static.png">
+          </a>
+          <h3>Static Layout</h3>
+          <p>This is a recration of a website that is supposed to look as similar as possible to the original site. (Currently hosted locally due to a bug)</p>
+        </div>
+        <div class="col-4">
+            <a id="Blue"href="">
+                <img class="image" src="https://elevenfifty.org/wp-content/themes/elevenfiftyacademy/assets/images/common/badges/badges-blue.png" alt="Blue Badge">
+              </a>
+              <h3>Blue Badge Project</h3>
+              <p>This is a placeholder for what will become my Blue Badge Project.</p>
+          </div>
+        <div class="col-4">
+            <a id="Red" href="">
+                <img class="image" src="https://elevenfifty.org/wp-content/themes/elevenfiftyacademy/assets/images/common/badges/badges-red.png" alt="Red badge">
+              </a>
+              <h3>Red Badge Project</h3>
+              <p>This is a placeholder for what will become my Red Badge Project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+  <h1>About Me</h1>
+  <p class="aboutP">My name is Robert Alexander Rudicel, I professionally go by Alex, and eveyone calls me Rudi. 
+    <br />I do not mind sharing a nickname with one of the greatest football movies to ever exist, 
+    <br />Rudy, but the problem arises when my uncle, father, brother and I are in a room and someone shouts, "Hey Rudi!".
+    <br />Regardless of my name issues, I have made the name Rudi into my own creation: a well rounded individual with a variety of skills both on and off the computer.
+    <br />In May of 2019, I graduated from Wabash College with a Bachelor's Degree in English and Minors in Religion and Computer Science. 
+    <br />Computer Science was not offered as a Major at the college until the Fall 2019 semseter, which is why I am not a CS Major.
+    <br />Many ask why I decided to go to Wabash if I knew I wanted to get into technology and there was no CS Major.
+    <br />I tell everyone who asks these two things:</p>
+    <br />
+    <ul>
+            <li>The other CS Minors and I knew this lack of a Major was an issue and with the help of the CS Department (of 3 professors),
+              <br />we were able to meet with potential candidates and provide feedback on who would become the fourth professor and thus enable the department to have a Major. 
+              <br />As I have mentioned above, the college is now offering a CS Major meaning that we were succesful in finding and getting another professor hired for the college. 
+              <br />I played an important role in shaping the future of the college as well as giving another option to incomming freshman for years to come. 
+              <br />That is a really good feeling and makes me smile every time I think about it.
+            </li>
+            <li>The other thing I tell people is that Wabash is a college founded on tradition.
+              <br />I was a third generation student at the college meaning that both my grandfather and father attended as well.
+              <br />While this is a neat aspect, the real reason I chose Wabash over other schools was the small size (< 100 students), 
+              <br />the fantastic liberal arts education (that has made me well-rounded), and the fact that it was impossible to sit in the back of the class and just coast by.
+              <br />Professors knew when you were not in class and sometimes they would call you or even come to your room to see what the problem was. 
+              <br />That was somenthing special that I knew I would be hard-pressed to find anywhere else. 
+            </li>
+    </ul>
+    <p class="aboutP">
+    <br />While my education gave me many valuable resources such as critical thinking, problem solving, and effective time management, I still had trouble finding a job.
+    <br />Most employers would see that I majored in English and that was the end of my application. Even though I have a very important skill due to my unique degree, 
+    <br />which is being able to translate from computer jargon into Layman's terms, that was still not enough for most employers to even consider giving me an interview.
+    <br />So I turned to ElevenFifty for help and enrolled in the JavaScript class for August 2019. <!--What's three more months on top of the past four years right?!-->
+    <br />While not garunteed employment after graduation, I know that with my desire to find a job combined with the tangible proof that I am more than a self-taught coder,
+    <br /> I will be able to get a job that I am really excited for. Finally, I know this is like a novel, but I did say I majored in English, right?
+    <br />
+    <br /><strong>TL;DR- My name is Rudi, recent college grad in English, hoping to find a great job post-ElevenFifty.</strong>
+
+  </p>
+  </section>
+  <!-- Contact -->
+
+  <!-- Our contact form is powered by formspree. Formspree is a free email service for HTML forms, that re-routes any form submissions to the provided email address (should be your personal email). This allows us to use form submission on our portfolios without using any JavaScript to post/route the form to us - formspree does that for us. -->
+  <section id="contact">
+    <div class="container">
+      <br>
+      <br>
+      <h2 class="text-center text-uppercase">Contact Me</h2> 
+      <div class="row">
+        <div class="col-12">
+          <form action="https://formspree.io/alexrudicel@comcast.net" method="POST">
+
+            <div class="control-group">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="form-control" placeholder="Your Name" id="name" required
+                  data-validation-required-message="Please enter your name" name="name">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="Your Email" id="email" required
+                  data-validation-required-message="Please enter your email" name="_replyto">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group">
+                <textarea class="form-control" rows="7" placeholder="Your Message" id="message" required
+                  data-validation-required-message="Please leave a message" name="message"></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="text-center">
+              <div id="success"></div>
+              <button type="submit" class="btn btn-lg btn-black">
+                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap JS links -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html> 
