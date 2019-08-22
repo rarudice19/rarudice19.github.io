@@ -1,5 +1,5 @@
 .jumbotron {
-    background: url('C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/background.jpg') ;
+    background-image: url("./assets/img/background.jpg");
     background-size: cover;
     height:70vh;
     color: white;
