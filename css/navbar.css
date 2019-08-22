@@ -1,0 +1,14 @@
+
+
+#navbarNav {
+    font-family: var(--font-six);
+
+      
+}
+
+.navbar-brand {
+    font-family: var(--font-six);
+    font-size: 28pt;
+    color: grey;
+
+}

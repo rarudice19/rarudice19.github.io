@@ -1,0 +1,18 @@
+h1 {
+    font-family: var(--font-five);
+    font-size: 100px;
+    color: darkblue;
+}
+#about {
+    background-color: lightgray;
+}
+
+li {
+    font-family: var(--font-five);
+    font-size: 18px;
+}
+.aboutP {
+    margin-left: 15px;
+    font-family: var(--font-seven);
+    font-size: 20px;
+}

@@ -1,0 +1,68 @@
+.jumbotron {
+    background: url('C:/Users/Darquan/Desktop/portfolio/portfolioExample/assets/img/background.jpg') ;
+    background-size: cover;
+    height:70vh;
+    color: white;
+    font-family: var(--font-five); 
+}
+h1.display-4 {
+    color: lightgray;
+    font-size: 108px;
+}
+.lead{
+    font-size: 48px;
+    position: absolute;
+    left: 25%;
+}
+#icon1 {
+    position: absolute;
+    left: 85%;
+    top: 10%;
+    width: 50px;
+    height: auto;
+    z-index: 1;
+}
+#icon2 {
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    width: 50px;
+    height: auto;
+    z-index: 1;
+}
+#control {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    left: 80%;
+    top: 10%;
+}
+#control2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    left: 85%;
+    top: 10%;
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#resBtn {
+    position: absolute;
+    left: 80%;
+    top: 20%;
+    padding: 1px 42px;
+}
+#proBtn {
+    position: absolute;
+    left: 80%;
+    top: 24%;
+}
